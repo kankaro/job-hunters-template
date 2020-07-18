@@ -1,2 +1,3 @@
-# job-hunters
+# Job Hunters
+
 Web application template

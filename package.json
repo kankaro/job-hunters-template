@@ -1,0 +1,25 @@
+{
+  "name": "front-end-workflow",
+  "version": "1.0.0",
+  "description": "Starter kit workflow for frontend development using parcel",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./development && rimraf -rf ./.cache",
+    "clean:build": "rimraf -rf ./dist/*",
+    "dev": "npm run clean && parcel public/*.html --out-dir development -p 3000 --open",
+    "build": "npm run clean:build && parcel build public/*.html --out-dir dist --public-url ./"
+  },
+  "keywords": [],
+  "author": "Lyndon G. Baylin Jr.",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime-corejs2": "^7.10.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10"
+  }
+}
